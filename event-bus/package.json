@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build:docker": "docker build -t muhaki/event-bus .",
+    "publish:docker": "docker push muhaki/event-bus"
   },
   "keywords": [],
   "author": "Harun Kilic",

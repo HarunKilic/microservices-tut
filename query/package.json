@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build:docker": "docker build -t muhaki/query .",
+    "publish:docker": "docker push muhaki/query"
   },
   "keywords": [],
   "author": "Harun Kilic",
